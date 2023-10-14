@@ -12,12 +12,11 @@ export default function Nav(){
                 <IconButton variant={'contained'} color={'blue'} size={'small'}>
                     <DiamondIcon/>
                 </IconButton>
-                <Typography variant="h4" fontFamily={'fantasy'} fontStyle={'bold'} >Miles</Typography>
+                <Typography variant="h4"  fontStyle={'bold'} >Miles</Typography>
                 
             </Stack>
             <Stack className="py-10 w-[60%]" direction={"row"}>
                 <SearchBar/>
-                {/* <TextField label={'search'} className="" style={{background:"white"}} /> */}
                 
             </Stack>
             <Stack className="w-auto" direction={"row"}>
