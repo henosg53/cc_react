@@ -9,20 +9,20 @@ import { Tabs } from './components/tabs';
 import Nav from './components/nav';
 // import Tips from './components/tips';
 
-import { LocalizationProvider } from '@mui/x-date-pickers';
+// import { LocalizationProvider } from '@mui/x-date-pickers';
 
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
+// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 
 
 function App() {
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <div className="App">
+    // <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <div className="w-full flex flex-col justify-center">
         <Nav/>
         <Tabs/>
         
       </div>
-    </LocalizationProvider>
+    // </LocalizationProvider>
   );
 }
 
