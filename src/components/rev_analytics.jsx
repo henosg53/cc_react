@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material"
-import { BarGraph } from "./examples/barChart"
-import TwoSimplePieChart from "./examples/donutChart"
+import { BarGraph } from "./barChart"
+import TwoSimplePieChart from "./donutChart"
 
 export const RevenuAnalytics=()=>{
     return(
