@@ -56,14 +56,53 @@ export const RevenuAnalytics=()=>{
                 </Stack>
 
             </Stack>
-            <Stack className="w-full" direction={'row'}>
+            <Stack className="w-full flex justify-between" spacing={2} direction={'row'}>
                 <BarGraph/>
-                <Stack className="bg-gray-200 p-2 rounded w-full">
+                <Stack className="bg-gray-200 p-2 rounded w-[40%]">
                     <Stack>
                         <Typography variant='subtitle1' ><b>Packages</b></Typography>
-                        <Typography variant='p' >Stats</Typography>
+                        {/* <Typography variant='p' >Stats</Typography> */}
                     </Stack>
                     <TwoSimplePieChart/>
+                </Stack>
+                
+            </Stack>
+            <Stack direction={'row'} spacing={2} className="flex w-full justify-around">
+                <Stack className="w-full bg-gray-200 p-2 flex flex-col items-start">
+                    <Typography variant='subtitle1' ><b>Archillary attachment rate</b></Typography>
+                    <Typography variant='subtitle1' > 0%</Typography>
+                </Stack>
+                <Stack className="w-full bg-gray-200 p-2 flex flex-col items-start">
+                    <Typography variant='subtitle1' ><b>Archillary attachment rate</b></Typography>
+                    <Typography variant='subtitle1' > 0%</Typography>
+                </Stack>
+                <Stack className="w-full bg-gray-200 p-2 flex flex-col items-start">
+                    <Typography variant='subtitle1' ><b>Archillary attachment rate</b></Typography>
+                    <Typography variant='subtitle1' > 0%</Typography>
+                </Stack>
+            </Stack>
+            <Stack  direction={'row'} spacing={2} className="flex  justify-center items-center w-full">
+                
+                <Stack spacing={2} className="w-full">
+                    <Stack className=" bg-gray-200 p-2 flex flex-col items-start">
+                        <Typography variant='subtitle1' ><b>Top 1 airline by volume</b></Typography>
+                        <Typography variant='subtitle1' > 0%</Typography>
+                    </Stack>
+                    <Stack className=" bg-gray-200 p-2 flex flex-col items-start">
+                        <Typography variant='subtitle1' ><b>Top 2 routes by volume</b></Typography>
+                        <Typography variant='subtitle1' > 0%</Typography>
+                    </Stack>
+                    
+                </Stack>
+                <Stack spacing={2} className="w-full">
+                    <Stack className=" bg-gray-200 p-2 flex flex-col items-start">
+                        <Typography variant='subtitle1' ><b>Top 1 airline by value</b></Typography>
+                        <Typography variant='subtitle1' > 0%</Typography>
+                    </Stack>
+                    <Stack className=" bg-gray-200 p-2 flex flex-col items-start">
+                        <Typography variant='subtitle1' ><b>Top 2 routes by value</b></Typography>
+                        <Typography variant='subtitle1' > 0%</Typography>
+                    </Stack>
                 </Stack>
                 
             </Stack>
