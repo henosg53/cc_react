@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.blueGradient {
+  background: linear-gradient(to right, rgb(9, 103, 226), darkblue);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
