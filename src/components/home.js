@@ -1,5 +1,5 @@
 import { Stack } from "@mui/material"
-import Tips from "./tips"
+// import Tips from "./tips"
 
 import { SubNav } from "./sub_nav"
 import { RevenuAnalytics } from "./rev_analytics"
@@ -10,7 +10,7 @@ export const Home = () =>{
             <SubNav/>
             <RevenuAnalytics/>
             
-            <Tips/>
+            {/* <Tips/> */}
 
         </Stack>
     )
