@@ -15,11 +15,11 @@ export const Tabs = () =>{
     return(
         
         <TabContext  value={value} onChange={handleChange} >
-            <Box sx={{borderBottom: 1, borderColor: "divider"}}>
+            <Box className='w-full' sx={{borderBottom: 1, borderColor: "divider"}}>
                 <TabList className="flex gap-10 " aria-label="main tab" onChange={handleChange} textColor={'primary'} indicatorColor={'primary'} centered >
-                    <Tab className="w-full" label={"Home"} value='1' icon={<HomeOutlinedIcon/>} iconPosition={'start'} />
-                    <Tab className="w-full" label={"Order"} value='2' icon={<ShoppingCartOutlinedIcon/>} iconPosition={'start'}/>
-                    <Tab className="w-full" label={"Support"} value='3' icon={<SupportAgentOutlinedIcon/>} iconPosition={'start'}  />
+                    <Tab className="w-fit sm:w-full" label={"Home"} value='1' icon={<HomeOutlinedIcon/>} iconPosition={'start'} />
+                    <Tab className="w-fit sm:w-full" label={"Order"} value='2' icon={<ShoppingCartOutlinedIcon/>} iconPosition={'start'}/>
+                    <Tab className="w-fit sm:w-full" label={"Support"} value='3' icon={<SupportAgentOutlinedIcon/>} iconPosition={'start'}  />
                 </TabList>
 
             </Box>

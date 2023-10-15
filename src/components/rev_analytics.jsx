@@ -9,7 +9,7 @@ import { LineGraph } from "./lineChart";
 
 export const RevenuAnalytics = () => {
     return(
-        <Stack className="flex flex-col  justify-around items-center px-24" spacing={8}>
+        <Stack className="flex flex-col  justify-around items-center px-5 sm:px-24" spacing={8}>
 
             <Stack className='justify-between w-full' direction={"row"} spacing={4}>
 
@@ -41,7 +41,7 @@ export const RevenuAnalytics = () => {
             </Stack>
 
 
-            <Stack className="w-full" direction={"row"} spacing={2}>
+            <div className="w-full flex flex-wrap sm:flex-nowrap gap-5" direction={"row"} spacing={2}>
 
                 <Stack className='blueGradient rounded p-2 w-full'>
                     <Typography variant='subtitle1' color={'white'}>Total</Typography>
@@ -68,12 +68,12 @@ export const RevenuAnalytics = () => {
                     <Typography variant='subtitle1'>10,234,900</Typography>
                 </Stack>
 
-            </Stack>
+            </div>
 
-            <Stack className="w-full flex justify-between" spacing={2} direction={'row'}>
-                <BarGraph  width={500}/>
+            <div className="w-full flex flex-col sm:flex-row gap-5 justify-between"  >
+                <BarGraph cn={"w-full"}  />
 
-                <Stack className="bg-gray-100 p-2 rounded w-[40%]">
+                <Stack className="bg-gray-100 p-2 rounded sm:w-[40%] ">
                     <Stack>
                         <Typography variant='subtitle1' ><b>Packages</b></Typography>
                         {/* <Typography variant='p' >Stats</Typography> */}
@@ -81,7 +81,7 @@ export const RevenuAnalytics = () => {
                     <TwoSimplePieChart/>
                 </Stack>
                 
-            </Stack>
+            </div>
 
             <Stack direction={'row'} spacing={2} className="flex w-full justify-around">
 

@@ -6,7 +6,7 @@ import { RevenuAnalytics } from "./rev_analytics"
 
 export const Home = () =>{
     return(
-        <Stack spacing={4}>
+        <Stack className="w-full" spacing={4}>
             <SubNav/>
             <RevenuAnalytics/>
             

@@ -6,7 +6,7 @@ import { SearchBar } from "./search_bar";
 
 export default function Nav(){
     return(
-        <Stack direction={"row"} spacing={2}  className="flex items-center justify-around bg-gray-200 w-full h-16 px-20">
+        <div  className="flex items-center justify-around bg-gray-200 w-full h-16 gap-5 sm:px-20">
           
             <Stack direction={"row"}>
                 <IconButton variant={'contained'} color={'blue'} size={'small'}>
@@ -30,6 +30,6 @@ export default function Nav(){
                 <IconButton variant={'contained'} color={''} size={'small'}><PersonOutlineOutlinedIcon/></IconButton>
             </Stack>
             
-        </Stack>
+        </div>
     )
 }
