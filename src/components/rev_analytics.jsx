@@ -9,21 +9,21 @@ import { LineGraph } from "./lineChart";
 
 export const RevenuAnalytics = () => {
     return(
-        <Stack className="flex flex-col  justify-around items-center px-5 sm:px-24" spacing={8}>
+        <Stack className=" flex flex-col w-full  justify-around items-center px-2 md:px-20 lg:px-24 sm:px-24" spacing={8}>
 
-            <Stack className='justify-between w-full' direction={"row"} spacing={4}>
+            <div className='flex flex-col sm:flex-row gap-5 justify-between w-full' direction={"row"} spacing={4}>
 
-                <Stack>
+                <Stack className="w-fit">
                     <h2 className="font-bold text-2xl ">Revenu Analytics</h2>
                 </Stack>
 
 
-                <Stack className='items-center' spacing={3} direction={'row'}>
+                <div className='flex items-center'>
                     <Typography variant='subtitle1' color={'primary'}>Export</Typography>
                     {/* <DatePicker /> */}
-                    <Stack direction={'row'} className="bg-gray-100 p-2 rounded ">
+                    <div  className="flex gap-3 bg-gray-100 p-2 rounded w-fit ">
                         
-                        <TextField size="small" className="w-fit h-full bg-white " defaultValue={'W'} select  >
+                        <TextField size="small" className="w-fit h-fit  bg-white " defaultValue={'W'} select  >
                             <MenuItem value={'W'} >Weekly</MenuItem>
                             <MenuItem value={'M'}>Monthly</MenuItem>
                             <MenuItem value={'Y'}>Yearly</MenuItem>
@@ -34,11 +34,11 @@ export const RevenuAnalytics = () => {
                             12th Oct - 12th Oct
                         </Button>
                 
-                    </Stack>
+                    </div>
                     
 
-                </Stack>
-            </Stack>
+                </div>
+            </div>
 
 
             <div className="w-full flex flex-wrap sm:flex-nowrap gap-5" direction={"row"} spacing={2}>
@@ -83,7 +83,7 @@ export const RevenuAnalytics = () => {
                 
             </div>
 
-            <Stack direction={'row'} spacing={2} className="flex w-full justify-around">
+            <div direction={'row'} spacing={2} className="flex flex-col sm:flex-row w-full gap-5 justify-around ">
 
                 <Stack className="w-full bg-gray-100 p-2 flex flex-col items-start">
                     <Typography variant='subtitle1' ><b>Archillary attachment rate</b></Typography>
@@ -100,7 +100,7 @@ export const RevenuAnalytics = () => {
                     <Typography variant='subtitle1' > 0%</Typography>
                 </Stack>
 
-            </Stack>
+            </div>
 
             <Stack  direction={'row'} spacing={2} className="flex  justify-center items-center w-full">
                 
